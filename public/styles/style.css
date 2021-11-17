@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /*Com o body tendo 100vh, as divs internas poderão se alinhar verticalmente no centro da página.*/
+    max-height: -webkit-fill-available;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+    background-image: url('../assets/message.jpeg');
+}
+
+#messages{
+    width: 500px;
+    height: 700px;
+    padding: 20px;
+    box-shadow: 4px 4px 20px 2px rgb(0 0 0 / 20%);
+    background-image: url('../assets/message_dark.jpeg');
+    background-size: contain;
+    overflow: auto;
+}
+
+#messages li{
+    list-style-type: none;
+}
+#user_form{
+    display: grid;
+    justify-content: center;
+    grid-template: 1fr/100% 25%;
+    gap: 5px;
+    padding-bottom: 10px;
+}
+
+#user, #message, #enviar, #definir{
+    border-style: none;
+    border-radius: 3px;
+}
+
+#enviar, #definir{
+    background-color: rgb(173, 255, 47, 0.5);
+    transition: all 0.3s ease-out;
+}
+
+#enviar:hover, #definir:hover{
+    background-color: rgb(173, 255, 47, 0.9);
+    transform: scale(1.01);
+    font-weight: 700;
+}
+
+#user{
+    padding: 5px;
+}
+
+#message_form{
+    display: grid;
+    grid-template: 1fr/80% 19%;
+    gap: 5px;
+    width: 500px;
+    padding-top: 10px;
+}
+
+#message{
+   padding: 5px;
+}
+
+.talk{
+    display: table;
+    margin-left: auto;
+    background-color: whitesmoke;
+    margin-bottom: 7px;
+    padding: 7px;
+    border-style: none;
+    border-radius: 5px;
+    box-shadow: 4px 4px 20px 2px rgb(0 0 0 / 20%);
+}
+
+.talk-no-user{
+    display: table;
+    background-color: lightgray;
+    margin-bottom: 7px;
+    padding: 7px;
+    border-style: none;
+    border-radius: 5px;
+    box-shadow: 4px 4px 20px 2px rgb(0 0 0 / 20%);
+}
