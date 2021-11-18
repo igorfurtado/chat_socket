@@ -17,76 +17,116 @@ body{
     background-image: url('../assets/message.jpeg');
 }
 
-#messages{
-    width: 500px;
-    height: 700px;
-    padding: 20px;
-    box-shadow: 4px 4px 20px 2px rgb(0 0 0 / 20%);
-    background-image: url('../assets/message_dark.jpeg');
-    background-size: contain;
-    overflow: auto;
+@media screen and (min-width: 250px){
+
+    #messages{
+        width: 90%;
+        height: 80%;
+        padding: 20px;
+        box-shadow: 4px 4px 20px 2px rgb(0 0 0 / 20%);
+        background-image: url('../assets/message_dark.jpeg');
+        background-size: contain;
+        overflow: auto;
+    }
+    
+    #messages li{
+        list-style-type: none;
+        font-size: 0.8em;
+    }
+    #user_form{
+        display: grid;
+        justify-content: center;
+        grid-template: 1fr/100% 50px;
+        gap: 5px;
+        padding-bottom: 10px;
+        width: 30%;
+    }
+    
+    #user, #message, #enviar, #definir{
+        border-style: none;
+        border-radius: 3px;
+    }
+    
+    #enviar, #definir{
+        background-color: rgb(173, 255, 47, 0.5);
+        transition: all 0.3s ease-out;
+    }
+    
+    #enviar:hover, #definir:hover{
+        background-color: rgb(173, 255, 47, 0.9);
+        transform: scale(1.01);
+        font-weight: 700;
+    }
+    
+    #user{
+        padding: 5px;
+    }
+    
+    #message_form{
+        display: grid;
+        grid-template: 1fr/80% 50px;
+        gap: 5px;
+        width: 50%;
+        padding-top: 10px;
+    }
+    
+    #message{
+       padding: 5px;
+    }
+
+    #user, #message{
+        font-size: 0.8em;
+    }
+    
+    .talk{
+        display: table;
+        margin-left: auto;
+        background-color: whitesmoke;
+        margin-bottom: 7px;
+        padding: 5px;
+        border-style: none;
+        border-radius: 5px;
+        box-shadow: 4px 4px 20px 2px rgb(0 0 0 / 20%);
+    }
+    
+    .talk-no-user{
+        display: table;
+        background-color: lightgray;
+        margin-bottom: 7px;
+        padding: 5px;
+        border-style: none;
+        border-radius: 5px;
+        box-shadow: 4px 4px 20px 2px rgb(0 0 0 / 20%);
+    }
 }
 
-#messages li{
-    list-style-type: none;
-}
-#user_form{
-    display: grid;
-    justify-content: center;
-    grid-template: 1fr/100% 25%;
-    gap: 5px;
-    padding-bottom: 10px;
-}
+@media screen and (min-width: 750px){
 
-#user, #message, #enviar, #definir{
-    border-style: none;
-    border-radius: 3px;
-}
+    #messages{
+        width: 60%;
+    }
 
-#enviar, #definir{
-    background-color: rgb(173, 255, 47, 0.5);
-    transition: all 0.3s ease-out;
-}
+    #messages li {
+        font-size: 1em;
+    }
 
-#enviar:hover, #definir:hover{
-    background-color: rgb(173, 255, 47, 0.9);
-    transform: scale(1.01);
-    font-weight: 700;
-}
+    #user, #message{
+        font-size: 0.9em;
+    }
 
-#user{
-    padding: 5px;
-}
+    #user_form{
+        grid-template: 1fr/100% 25%;
+    }
 
-#message_form{
-    display: grid;
-    grid-template: 1fr/80% 19%;
-    gap: 5px;
-    width: 500px;
-    padding-top: 10px;
-}
+    #message_form{
+        grid-template: 1fr/80% 19%;
+    }
 
-#message{
-   padding: 5px;
-}
-
-.talk{
-    display: table;
-    margin-left: auto;
-    background-color: whitesmoke;
-    margin-bottom: 7px;
-    padding: 7px;
-    border-style: none;
-    border-radius: 5px;
-    box-shadow: 4px 4px 20px 2px rgb(0 0 0 / 20%);
-}
-
-.talk-no-user{
-    display: table;
-    background-color: lightgray;
-    margin-bottom: 7px;
-    padding: 7px;
-    border-style: none;
-    border-radius: 5px;
-    box-shadow: 4px 4px 20px 2px rgb(0 0 0 / 20%);
+    .talk{
+        padding: 7px;
+    }
+    
+    .talk-no-user{
+        padding: 7px;
+    }
 }
