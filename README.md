@@ -1,5 +1,5 @@
 
-![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
+![youChatLogo](https://user-images.githubusercontent.com/70289587/142443512-644d6717-654b-4644-aec6-cdabf65bdffc.png)
 
 
 # YouChat!
@@ -23,7 +23,7 @@ Para instalação local da aplicação, faz-se necessária a instalação dos se
     
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![YouChat!](https://user-images.githubusercontent.com/70289587/142443444-3b1681a9-eeb9-442a-b645-579a689461cc.jpg)
 
 
 ## Tech Stack
