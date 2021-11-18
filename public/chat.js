@@ -1,4 +1,4 @@
-const socket = io.connect('http://localhost:3000'); //importante declarar o script importando o socket antes do script chat.js no html
+const socket = io(); //importante declarar o script importando o socket antes do script chat.js no html
 
 let user = null;
 
